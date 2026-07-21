@@ -40,31 +40,6 @@ export const ConceptRulesPage: React.FC = () => {
         />
       )}
 
-      {/* ── Top bar ── */}
-      <header className="bg-blue-800 text-white px-6 py-3.5 flex items-center justify-between shadow-md">
-        <div>
-          <p className="text-xs text-blue-300 uppercase tracking-widest font-semibold">
-            Conceptual UI
-          </p>
-          <h1 className="text-lg font-bold mt-0.5">Concept Rules</h1>
-        </div>
-        <div className="flex gap-2">
-          <Button variant="ghost" size="sm">
-            Cancel
-          </Button>
-          <Button
-            variant="primary"
-            size="sm"
-            onClick={runQuery}
-            disabled={queryLoading || !form.concept}
-            data-testid="save-run-btn"
-            className="!bg-white !text-blue-800 hover:!bg-blue-50"
-          >
-            {queryLoading ? "Running…" : "Save & Run"}
-          </Button>
-        </div>
-      </header>
-
       <main className="max-w-6xl mx-auto px-4 py-5 space-y-4">
         {/* ── Concept Meta Card ── */}
         <div className="bg-white rounded-xl shadow-sm p-5">
